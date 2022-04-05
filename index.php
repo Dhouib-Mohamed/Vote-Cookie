@@ -1,3 +1,11 @@
+<?php
+if(isset($_GET["msg"])&&$_GET["msg"]!="") {
+    $message = $_GET["msg"];
+    echo "<script>alert('$message')</script>";
+    $_GET["msg"] = "";
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
